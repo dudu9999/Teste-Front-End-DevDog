@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop devdog</title>
+    <link rel="shortcut icon" href="img/cart.png" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="logo">
+            <h1 class="nome-loja">Loja Teste</h1>
+        </div>
+
+        <div class="cart-container">
+            <a href="cart.html" target="_blank" rel="noopener noreferrer">
+                <img src="img/cart.png" alt="cart">
+                <div class="cart-quant-container">
+                    <p id="quant-cart">0</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="login-container">
+            <a href="login.html" target="_blank" rel="noopener noreferrer">Entre</a>
+            ou
+            <a href="singup.html" target="_blank" rel="noopener noreferrer">Cadastre-se</a>
+        </div>
+
+        <div class="search-container">
+            <input class="search-input" type="text" placeholder="Search.." name="search">
+            <i for="search" class="fa fa-search"></i>
+        </div>
+    </header>
+
+    <main>
+        <div class="navegacao-container">
+            <a href="index.html">HOME</a>/<a href="calcados.html">CALÇADOS</a>/<a href="detail.html">PRODUTO ABC</a>
+        </div>
+
+        <div class="main-container">
+            <div class="left-container">
+                <img src="img/product.png" alt="tenis">
+            </div><!--left-container-->
+
+            <div class="right-container">
+                <h1 class="titulo">Produto ABC</h1>
+                <p class="descricao-prod">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quos? Veniam laborum, natus maxime optio cum veritatis blanditiis culpa dolor atque voluptatibus, illo exercitationem maiores ipsum quibusdam! Facere, quo nam.</p>
+
+                <p class="valor-anterior">R$ 199,00</p>
+
+                <div class="preco-container">
+                    <div class="preco">
+                        <h2>R$ 159,00</h2>
+                    </div>
+                    <div class="observacoes">
+                        <p>no boleto<br>10% de desconto</p>
+                    </div>
+                </div>
+
+                <div class="avaliacao">
+                    <a href="javascript:void(0)" onclick="Avaliar(1)">
+                    <img src="img/star-off.png" id="s1"></a>
+                    
+                    <a href="javascript:void(0)" onclick="Avaliar(2)">
+                    <img src="img/star-off.png" id="s2"></a>
+                    
+                    <a href="javascript:void(0)" onclick="Avaliar(3)">
+                    <img src="img/star-off.png" id="s3"></a>
+                    
+                    <a href="javascript:void(0)" onclick="Avaliar(4)">
+                    <img src="img/star-off.png" id="s4"></a>
+                    
+                    <a href="javascript:void(0)" onclick="Avaliar(5)">
+                    <img src="img/star-off.png" id="s5"></a>
+                    <p class="avalie-text"  onclick="AvalieNow(4)">Avalie agora</p>
+                    <!-- <p id="rating">0</p> -->
+                </div>
+
+                <div class="button-container">
+                    <button  onclick="Comprar()"><i class="fas fa-check"></i> COMPRAR</button>
+                </div>
+
+                <div class="opinion">
+                    <p><strong>Opiniões:</strong></p>
+                    <p id="comment">"Adorei o produto, Vou comprar outro em breve"</p>
+                    <p id="name-comment">- Alberto Grerra</p>
+
+                </div>
+            </div><!--right-containe-->
+        </div><!--main-container-->
+
+        <div class="descricao-completa">
+            <div class="botao-container">
+                <button id="botao1" onclick="descricaoTabs('desc')" active>DESCRIÇÃO</button>
+                <button id="botao2" onclick="descricaoTabs('incluso')">ITEM INCLUSO</button>
+                <button id="botao3" onclick="descricaoTabs('garantia')">GARANTIA</button>
+            </div>
+
+            <div id="desc" class="tab-desc">
+                <h2>DESCRIÇÃO</h2>
+                <p>produto é Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, voluptatum nulla itaque quidem in ipsa dicta molestias assumenda? Enim a quia perspiciatis, similique obcaecati hic praesentium dolorem voluptates. Deserunt, officia..</p>
+            </div>
+              
+            <div id="incluso" class="tab-desc" style="display:none">
+                <h2>ITEM INCLUSO</h2>
+                <p>Incluso com o item é lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequatur ducimus, ut tenetur, qui praesentium excepturi similique minima reiciendis quos voluptate rem natus, voluptatum quia provident animi corrupti? Minima, ex.</p>
+            </div>
+              
+            <div id="garantia" class="tab-desc" style="display:none">
+                <h2>GARANTIA</h2>
+                <p>A garantia do produto é de lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum doloribus debitis reiciendis error commodi, quaerat officiis excepturi voluptatem nisi ratione soluta ducimus accusamus maiores totam et suscipit expedita perspiciatis voluptatibus.</p>
+            </div>
+        </div>
+
+            
+    </main><!-- main-->
+    <footer> <p class="copyright">Projeto desenvolvido por Eduardo Caetano Correa, veja mais clicando  <a class="portifolio" href="https://eduardo-caetano.netlify.app/">Aqui</a></p> </footer>
+    <script src="js/script.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>
